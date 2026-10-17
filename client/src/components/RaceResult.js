@@ -16,7 +16,7 @@ export default function RaceResult({ results }) {
             <div className="flex items-center gap-4 text-accent">
               <AiOutlineTrophy className="text-[8rem] font-bold"/>
               <h2 className="text-6xl font-bold text-accentText">
-                {result === 'win' ? 'you win!' : 'you lose...'}
+                {result === 'win' ? 'You win!' : 'You lose...'}
               </h2>
             </div>
             <div className="flex md:ml-12 lg:ml-32 gap-8 sm:gap-10 md:gap-14 lg:gap-20 mb-4">

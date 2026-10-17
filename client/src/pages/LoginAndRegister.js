@@ -22,6 +22,7 @@ export default function LoginAndRegister() {
       const res = await axios.post('http://localhost:5001/api/auth/login', loginForm);
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('username', res.data.username);
+      localStorage.setItem('userId', res.data.userId);
       alert('Login successful!');
       setLoginForm({ username: '', password: '' });
       navigate(0);
@@ -38,6 +39,7 @@ export default function LoginAndRegister() {
       const res = await axios.post('http://localhost:5001/api/auth/login', registerForm);
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('username', res.data.username);
+      localStorage.setItem('userId', res.data.userId);
       alert('Registration successful!');
       setRegisterForm({ username: '', password: '' });
       navigate(0);
